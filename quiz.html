@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>          
+    <title>AWMAC</title>
+    <link rel="stylesheet" href="quiz.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+     <div class="nav">
+    <ul>
+      <li  ><a href="index.html">HOME</a></li>
+      <li>
+        <a href="lesson.html">LESSONS ▾</a>
+        <ul>
+          <li><a href="lesson.html">Introduction to Trigonometry</a></li>
+          <li><a href="Trigonometric ratios.html">Trigonometric Ratios</a></li>
+          <li><a href="unitcircle.html">Unit Circle and Angles</a></li>
+          <li><a href="Trig-identites.html">Trigonometric Identities</a></li>
+          <li><a href="Application.html">Applications of Trigonometry</a></li>
+        </ul>
+        <li><a href = "tutorial.html">TUTORIAL</a></li>
+        <li class="Active"><a href = "quiz.html">QUIZ</a></li>
+        <li><a href = "about.html">ABOUT</a></li>
+        <li><a href = "contact.html">CONTACT</a></li>
+        
+    </ul>
+  </div>
+
+<div class = "content">
+<div class="quiz-container">
+    <h1 class="quiz-title">Trigonometry Quiz</h1>
+    <p class="quiz-instructions">Test your knowledge of trigonometric concepts with the following questions. Choose the correct answer for each question.</p><hr>
+
+  <form id="quizForm">
+    <div class="question">
+    <p>1. What is sin 30°?</p>
+    <input type="radio" name="q1" value="a"> a) 1<br>
+    <input type="radio" name="q1" value="b"> b) √3/2<br>
+    <input type="radio" name="q1" value="c"> c) 1/2<br>
+    <input type="radio" name="q1" value="d"> d) √2/2<br>
+
+    <p>2. Identity: 1 + tan²θ = ?</p>
+    <input type="radio" name="q2" value="a"> a) sin²θ<br>
+    <input type="radio" name="q2" value="b"> b) sec²θ<br>
+    <input type="radio" name="q2" value="c"> c) cos²θ<br>
+    <input type="radio" name="q2" value="d"> d) csc²θ<br>
+
+<p>3. The value of cos 60° is:</p>
+    <input type="radio" name="q3" value="a"> a) 0<br>
+    <input type="radio" name="q3" value="b"> b) 1/2<br>
+    <input type="radio" name="q3" value="c"> c) √3/2<br>
+    <input type="radio" name="q3" value="d"> d) 1<br>
+
+    <p>4. If sin A = 3/5, then cos A equals:</p>
+    <input type="radio" name="q4" value="a"> a) 4/5<br>
+    <input type="radio" name="q4" value="b"> b) 5/4<br>
+    <input type="radio" name="q4" value="c"> c) 1/5<br>
+    <input type="radio" name="q4" value="d"> d) 2/5<br>
+
+    <p>5. Which identity is correct?</p>
+    <input type="radio" name="q5" value="a"> a) 1 + cot²θ = cos²θ<br>
+    <input type="radio" name="q5" value="b"> b) 1 + tan²θ = sec²θ<br>
+    <input type="radio" name="q5" value="c"> c) 1 + sin²θ = cos²θ<br>
+    <input type="radio" name="q5" value="d"> d) tan²θ = sin²θ + cos²θ<br>
+
+    <p>6. sin²θ + cos²θ is equal to:</p>
+    <input type="radio" name="q6" value="a"> a) 0<br>
+    <input type="radio" name="q6" value="b"> b) 1<br>
+    <input type="radio" name="q6" value="c"> c) sin θ<br>
+    <input type="radio" name="q6" value="d"> d) cos θ<br>
+
+    <p>7. The value of tan 45° is:</p>
+    <input type="radio" name="q7" value="a"> a) 0<br>
+    <input type="radio" name="q7" value="b"> b) 1<br>
+    <input type="radio" name="q7" value="c"> c) √3<br>
+    <input type="radio" name="q7" value="d"> d) √2<br>
+
+    <p>8. Simplify (1 − cos²θ):</p>
+    <input type="radio" name="q8" value="a"> a) sin²θ<br>
+    <input type="radio" name="q8" value="b"> b) cos²θ<br>
+    <input type="radio" name="q8" value="c"> c) tan²θ<br>
+    <input type="radio" name="q8" value="d"> d) sec²θ<br>
+
+    <p>9. Which of the following is equal to sin 2θ?</p>
+    <input type="radio" name="q9" value="a"> a) 2 sin θ cos θ<br>
+    <input type="radio" name="q9" value="b"> b) cos²θ − sin²θ<br>
+    <input type="radio" name="q9" value="c"> c) tan θ<br>
+    <input type="radio" name="q9" value="d"> d) sec²θ<br>
+
+    <p>10. If tan θ = 1, then θ equals:</p>
+    <input type="radio" name="q10" value="a"> a) 0°<br>
+    <input type="radio" name="q10" value="b"> b) 30°<br>
+    <input type="radio" name="q10" value="c"> c) 45°<br>
+    <input type="radio" name="q10" value="d"> d) 90°<br>
+</div>
+    <br>
+    <button class="submit-button" type="button" onclick="checkAnswers()">Submit</button>
+  </form>
+
+  <h3 id="result"></h3>
+  <div id="answers"></div>
+
+  <script>
+    function checkAnswers() {
+      // correct answers
+      let correct = {
+         q1: "c", 
+        q2: "b",  
+        q3: "b",  
+        q4: "a",  
+        q5: "b",  
+        q6: "b",  
+        q7: "b",  
+        q8: "a",  
+        q9: "a",  
+        q10:"c"   
+      };
+
+      let form = document.forms["quizForm"];
+      let score = 0;
+      let total = Object.keys(correct).length;
+      let output = "";
+
+      for (let q in correct) {
+        let userAnswer = form[q].value;
+        if (userAnswer === correct[q]) {
+          score++;
+          output += `<p class="correct">Question ${q.slice(1)} ✔ Correct</p>`;
+        } else {
+          output += `<p class="wrong">Question ${q.slice(1)} ✘ Wrong (Correct: ${correct[q].toUpperCase()})</p>`;
+        }
+      }
+
+      document.getElementById("result").innerHTML = `Your Score: ${score} / ${total}`;
+      document.getElementById("answers").innerHTML = output;
+
+    if (score < 7) {
+        document.getElementById("result").style.color = "red";
+      } else if (score < 10) {
+        document.getElementById("result").style.color = "orange";
+      } else {
+        document.getElementById("result").style.color = "green";
+      }
+
+
+    }
+  </script>
+
+<a href="lesson.html"><button class="submit-button" type="button">BACK TO LESSON</button></a>
+            </body>
+            </html>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
