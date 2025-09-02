@@ -1,0 +1,136 @@
+body {
+    background-image: url('b.jpg');
+    background-size:cover;
+    background-position: center;
+    
+    width: 100%;
+}
+
+.nav {
+      color: white;
+    padding: 4px;
+    display: flex;
+    justify-content:flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav ul li {
+      position: relative;
+    }
+
+    .nav ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: #031a3d;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .nav ul li a:hover {
+      transition: ease-in-out 0.5s;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    color: rgb(230, 18, 11);
+    }
+
+    /* Dropdown Menu */
+    .nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(173, 216, 230, 0.9);
+      min-width: 200px;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .nav ul li ul li a {
+      padding: 10px 15px;
+      border-bottom: 1px solid #fff;
+    }
+
+    .nav ul li:hover ul {
+      display: flex;
+    }
+
+    /* Optional Styling */
+    .nav ul li ul li a:hover {
+      background: #005bbb;
+      color: rgb(226,230,11);
+    }
+
+
+    .Active {
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+   background-color: rgba(173, 216, 230, 0.8);
+    
+}
+
+        .content{
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1000px;
+   max-height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   padding: 20px;
+}
+
+.tutorial-video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.tutorial-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #031a3d;
+    margin-bottom: 10px;
+    border-bottom: #005bbb 2px solid;
+    padding-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: #005bbb 2px solid;
+    padding-bottom: 10px;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.quiz{
+    display: inline-block;
+    background-color: #005bbb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.quiz a{
+    color: white;
+    text-decoration: none;
+}
+
+    .quiz:hover {
+        background-color: #001a33;
+    }
+
+    

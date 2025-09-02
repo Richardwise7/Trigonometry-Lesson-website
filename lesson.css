@@ -1,0 +1,121 @@
+body {
+    background-image: url('b.jpg');
+    background-size:cover;
+    background-position: center;
+    
+    width: 100%;
+}
+
+.nav {
+      color: white;
+    padding: 4px;
+    display: flex;
+    justify-content:flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%;
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav ul li {
+      position: relative;
+    }
+
+    .nav ul li a {
+      display: block;
+      padding: 12px 20px;
+      color: #031a3d;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .nav ul li a:hover {
+      transition: ease-in-out 0.5s;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    color: rgb(230, 18, 11);
+    }
+
+    /* Dropdown Menu */
+    .nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(173, 216, 230, 1.0);
+      min-width: 200px;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .nav ul li ul li a {
+      padding: 10px 15px;
+      border-bottom: 1px solid #fff;
+    }
+
+    .nav ul li:hover ul {
+      display: flex;
+    }
+
+    
+    .nav ul li ul li a:hover {
+      background: #005bbb;
+      color: rgb(226,230,11);
+    }
+
+    .content{
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1000px;
+   max-height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   padding: 20px;
+}
+
+
+    .Active {
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(173, 216, 230, 0.8);
+}
+
+p{
+    font-size: 28px;
+    line-height: 1.6;
+    color: #0f0f0f;
+}
+
+.lesson-topics {
+   line-height: 1.6;
+   font-size:28px;
+}
+
+h2{
+    color: rgb(3, 18, 85);
+    font-size: 2.5rem;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: #005bbb 2px solid;
+    padding-bottom: 10px;
+}
+
+.h2{
+    color: rgb(3, 18, 85);
+    font-family: 'Roboto', sans-serif;
+    border-bottom: #005bbb 2px solid;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.6rem;
+}

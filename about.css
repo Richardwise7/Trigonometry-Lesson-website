@@ -1,0 +1,212 @@
+body {
+    background-image: url('b.jpg');
+    background-size:cover;
+    background-position: center;
+    
+    width: 100%;
+}
+
+.logo {
+    width:300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+.nav {
+      color: white;  
+    padding: 4px;
+    display: flex;
+    justify-content:flex-end;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%;
+
+    }
+
+    .nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav ul li {
+      position: relative;
+    }
+
+    .nav ul li a {
+      color: #0B2545; 
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+      display: block;
+      padding: 12px 20px;
+      font-size: 20px;
+    }
+
+    .nav ul li a:hover {
+      transition: ease-in-out 0.5s;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+    color: rgb(230, 18, 11);
+    }
+
+    /* Dropdown Menu */
+    .nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(173, 216, 230, 0.9);
+      min-width: 200px;
+      flex-direction: column;
+      z-index: 1000;
+    }
+
+    .nav ul li ul li a {
+      padding: 10px 15px;
+      border-bottom: 1px solid #fff;
+    }
+
+    .nav ul li:hover ul {
+      display: flex;
+    }
+
+    /* Optional Styling */
+    .nav ul li ul li a:hover {
+      background: #005bbb;
+      color: rgb(226,230,11);
+    }
+
+.Active {
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+   background-color: rgba(173, 216, 230, 0.8);
+    
+}
+
+.head{
+  
+  text-align: center;          
+  font-family: 'Poppins', sans-serif; 
+  font-size: 3.5rem;            
+  font-weight: 700;            
+  color: #ffffff;              
+  background: rgba(0, 102, 204, 0.7);
+  padding: 20px 30px;          
+  border-radius: 15px;         
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6); 
+  margin-top: 20px;
+
+}
+
+.course-content {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif; 
+  font-size: 3.5rem;            
+  font-weight: 700;            
+  color: #ffffff;              
+  background: rgba(0, 102, 204, 0.7);
+  padding: 20px 30px;          
+  border-radius: 15px;         
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6); 
+  margin-top: 20px;
+}
+
+
+
+
+.content{
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1000px;
+   max-height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+   padding: 20px;
+}
+
+
+.logo{
+    width:300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description{
+    font-size: 28px;
+    line-height: 1.6;
+    color: #0f0f0f;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.awmac-academy {
+  font-family: 'Poppins', sans-serif;  
+  font-size: 3.3rem;                   
+  font-weight: 700;                    
+  color: #004080;                  
+  text-align: center;                  
+  margin-top: 20px;
+}
+
+.mission{
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+    color: #004080;
+      border-top: #005bbb 2px solid;
+    
+}
+
+
+.mission-description{
+    font-size: 28px;
+    line-height: 1.6;
+    color: #0f0f0f;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.team{
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+    color: #004080;
+    text-transform: uppercase;
+      border-top: #005bbb 2px solid;
+    padding-bottom: 10px;
+}
+
+.contact{
+    font-size: 28px;
+    line-height: 1.6;
+    margin-top: 5px;
+    padding: 10px;
+    color: #004080;
+    text-transform: uppercase;
+}
+
+.submit-button{
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 400px;
+    justify-content: center;
+    
+}
+
